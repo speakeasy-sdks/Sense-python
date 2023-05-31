@@ -1,5 +1,9 @@
 # document
 
+## Overview
+
+Classify documents by type
+
 ### Available Operations
 
 * [classify_document](#classify_document) - Classify document by type

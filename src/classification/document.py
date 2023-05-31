@@ -6,6 +6,7 @@ from classification.models import operations, shared
 from typing import Optional
 
 class Document:
+    r"""Classify documents by type"""
     _client: requests_http.Session
     _security_client: requests_http.Session
     _server_url: str
