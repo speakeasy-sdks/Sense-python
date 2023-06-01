@@ -1,5 +1,6 @@
 src/classification/document.py
 src/classification/sdk.py
+.gitignore
 pylintrc
 setup.py
 src/classification/__init__.py
