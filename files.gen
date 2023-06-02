@@ -1,3 +1,4 @@
+src/classification/sdkconfiguration.py
 src/classification/document.py
 src/classification/sdk.py
 .gitignore
