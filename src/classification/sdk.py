@@ -7,7 +7,7 @@ from classification import utils
 from classification.models import shared
 
 class Classification:
-    r"""Extract structured data from documents with the Sensible API."""
+    r"""Classification: Extract structured data from documents with the Sensible API."""
     document: Document
     r"""Classify documents by type"""
 
