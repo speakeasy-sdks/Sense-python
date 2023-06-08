@@ -35,7 +35,7 @@ import classification
 
 s = classification.Classification(
     security=shared.Security(
-        bearer_auth="YOUR_BEARER_TOKEN_HERE",
+        bearer_auth="",
     ),
 )
 
@@ -73,7 +73,7 @@ import classification
 
 s = classification.Classification(
     security=shared.Security(
-        bearer_auth="YOUR_BEARER_TOKEN_HERE",
+        bearer_auth="",
     ),
 )
 
