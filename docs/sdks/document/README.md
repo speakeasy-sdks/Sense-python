@@ -47,6 +47,18 @@ if res.classify_async_single_response is not None:
     # handle response
 ```
 
+### Parameters
+
+| Parameter                                  | Type                                       | Required                                   | Description                                |
+| ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| `request`                                  | [bytes](../../models//.md)                 | :heavy_check_mark:                         | The request object to use for the request. |
+
+
+### Response
+
+**[operations.ClassifyDocumentResponse](../../models/operations/classifydocumentresponse.md)**
+
+
 ## classify_document_sync
 
 
@@ -84,3 +96,15 @@ res = s.document.classify_document_sync(req)
 if res.classify_single_response is not None:
     # handle response
 ```
+
+### Parameters
+
+| Parameter                                  | Type                                       | Required                                   | Description                                |
+| ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| `request`                                  | [bytes](../../models//.md)                 | :heavy_check_mark:                         | The request object to use for the request. |
+
+
+### Response
+
+**[operations.ClassifyDocumentSyncResponse](../../models/operations/classifydocumentsyncresponse.md)**
+

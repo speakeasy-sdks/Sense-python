@@ -8,10 +8,10 @@ from typing import Optional
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class ClassifyAsyncSingleResponse:
     r"""Link to download the classification response. Poll the link until it returns a non-error response."""
-    
     content_type: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('content_type'), 'exclude': lambda f: f is None }})
     r"""File format of the document for which you requested classification."""
     download_link: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('download_link'), 'exclude': lambda f: f is None }})
@@ -19,3 +19,4 @@ class ClassifyAsyncSingleResponse:
     id: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('id'), 'exclude': lambda f: f is None }})
     r"""ID for this classification response."""
     
+

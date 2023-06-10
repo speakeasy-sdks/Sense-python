@@ -16,6 +16,14 @@ src/classification/models/shared/classifyasyncsingleresponse.py
 src/classification/models/shared/classifysingleresponse.py
 src/classification/models/shared/security.py
 src/classification/models/shared/__init__.py
-docs/classification/README.md
-docs/document/README.md
+docs/sdks/classification/README.md
+docs/sdks/document/README.md
 USAGE.md
+docs/models/operations/classifydocumentresponse.md
+docs/models/operations/classifydocumentsyncresponse.md
+docs/models/shared/classifyasyncsingleresponse.md
+docs/models/shared/classifysingleresponseclassificationsummary.md
+docs/models/shared/classifysingleresponsedocumenttype.md
+docs/models/shared/classifysingleresponsereferencedocuments.md
+docs/models/shared/classifysingleresponse.md
+docs/models/shared/security.md

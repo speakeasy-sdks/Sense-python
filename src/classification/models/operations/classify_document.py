@@ -7,9 +7,9 @@ from ..shared import classifyasyncsingleresponse as shared_classifyasyncsinglere
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class ClassifyDocumentResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     bad_request: Optional[str] = dataclasses.field(default=None)
@@ -24,3 +24,4 @@ class ClassifyDocumentResponse:
     unsupported_media_type: Optional[str] = dataclasses.field(default=None)
     r"""Unsupported Media Type"""
     
+

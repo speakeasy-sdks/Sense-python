@@ -33,10 +33,10 @@ if res.classify_async_single_response is not None:
 ## Available Resources and Operations
 
 
-### [document](docs/document/README.md)
+### [document](docs/sdks/document/README.md)
 
-* [classify_document](docs/document/README.md#classify_document) - Classify document by type
-* [classify_document_sync](docs/document/README.md#classify_document_sync) - Classify document by type (sync)
+* [classify_document](docs/sdks/document/README.md#classify_document) - Classify document by type
+* [classify_document_sync](docs/sdks/document/README.md#classify_document_sync) - Classify document by type (sync)
 <!-- End SDK Available Operations -->
 
 ### Maturity

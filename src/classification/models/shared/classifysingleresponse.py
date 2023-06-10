@@ -8,9 +8,9 @@ from typing import Optional
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class ClassifySingleResponseClassificationSummary:
-    
     id: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('id'), 'exclude': lambda f: f is None }})
     r"""Unique ID for the document type."""
     name: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('name'), 'exclude': lambda f: f is None }})
@@ -19,11 +19,13 @@ class ClassifySingleResponseClassificationSummary:
     r"""Similarity score comparing the document to the document type, between 0 and 1."""
     
 
+
+
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class ClassifySingleResponseDocumentType:
     r"""Document type defined in the Sensible account that this doc is most similar to. To use a document type for classification, Sensible requires that the type contains at least one reference document."""
-    
     id: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('id'), 'exclude': lambda f: f is None }})
     r"""Unique ID for the document type."""
     name: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('name'), 'exclude': lambda f: f is None }})
@@ -32,10 +34,12 @@ class ClassifySingleResponseDocumentType:
     r"""Similarity score comparing the document to the document type, between 0 and 1."""
     
 
+
+
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class ClassifySingleResponseReferenceDocuments:
-    
     id: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('id'), 'exclude': lambda f: f is None }})
     r"""Unique ID for the reference document."""
     name: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('name'), 'exclude': lambda f: f is None }})
@@ -44,11 +48,13 @@ class ClassifySingleResponseReferenceDocuments:
     r"""Similarity score comparing the document to the reference document, between 0 and 1."""
     
 
+
+
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class ClassifySingleResponse:
     r"""The document type and reference documents in the Sensible account that are most similar to this document."""
-    
     classification_summary: Optional[list[ClassifySingleResponseClassificationSummary]] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('classification_summary'), 'exclude': lambda f: f is None }})
     r"""Scores for this document's similarity to each document type in the Sensible account, excluding document types Sensible created in your account as tutorials, such as `senseml_basics`."""
     document_type: Optional[ClassifySingleResponseDocumentType] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('document_type'), 'exclude': lambda f: f is None }})
@@ -56,3 +62,4 @@ class ClassifySingleResponse:
     reference_documents: Optional[list[ClassifySingleResponseReferenceDocuments]] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('reference_documents'), 'exclude': lambda f: f is None }})
     r"""Reference documents uploaded to the Sensible account that this document is most similar to."""
     
+
